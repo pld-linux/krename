@@ -39,7 +39,7 @@ uprawnieñ oraz w³asno¶ci plików.
 %setup -q
 
 %build
-cp -f /usr/share/automake/config.sub .
+cp -f /usr/share/automake/config.sub admin/
 kde_appsdir="%{_applnkdir}"; export kde_appsdir
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 kde_icondir="%{_pixmapsdir}"; export kde_icondir
