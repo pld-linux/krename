@@ -12,7 +12,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:  kdelibs-devel >= 3.0
 BuildRequires:  fam-devel
 
-%define		_prefix		/usr/X11R6
 %define		_htmldir	/usr/share/doc/kde/HTML
 
 %description
