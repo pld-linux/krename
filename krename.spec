@@ -43,7 +43,7 @@ uprawnieñ oraz w³asno¶ci plików.
 
 %build
 cp -f /usr/share/automake/config.sub admin
-kde_htmldir="%{_kde_docdir}"; export kde_htmldir
+kde_htmldir="%{_kdedocdir}"; export kde_htmldir
 %configure \
 	--with-qt-libraries=%{_libdir}
 
