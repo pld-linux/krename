@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Vendor:		Dominik Seichter <domseichter@web.de>
-Source0:	http://telia.dl.sourceforge.net/sourceforge/krename/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/krename/%{name}-%{version}.tar.bz2
 # Source0-md5:	4c361b1ab91518e9129adafb26d607a0
 URL:		http://krename.sourceforge.net/
 BuildRequires:  fam-devel
@@ -44,18 +44,15 @@ kde_htmldir="%{_htmldir}"; export kde_htmldir
 kde_icondir="%{_pixmapsdir}"; export kde_icondir
 %configure
 
-# Setup for parallel builds
-numprocs=`egrep -c ^cpu[0-9]+ /proc/stat || :`
-if [ "$numprocs" = "0" ]; then
-  numprocs=1
-fi
-
-%{__make} -j$numprocs
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install-strip \
+
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+mv -f $RPM_BUILD_ROOT%{_datadir}/locale/{zh_TW.Big5,zh_TW}
 
 %find_lang %{name} --with-kde
 
