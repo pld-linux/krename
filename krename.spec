@@ -1,13 +1,13 @@
 Summary:	A powerful batch renamer for KDE
 Summary(pl):	Narzêdzie do zmiany nazw plików dla KDE
 Name:		krename
-Version:	2.8.4
+Version:	2.8.5
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Vendor:		Dominik Seichter <domseichter@web.de>
 Source0:	http://dl.sourceforge.net/krename/%{name}-%{version}.tar.bz2
-# Source0-md5:	550974d29b39fe1807ae61f52d35d5ca
+# Source0-md5:	4cc4d8917e2fe2e5a592b5b04a5a5ab1
 URL:		http://krename.sourceforge.net/
 BuildRequires:	fam-devel
 BuildRequires:	kdelibs-devel >= 3.0
