@@ -1,7 +1,7 @@
 Summary:	A powerfull batch renamer for KDE
 Summary(pl):	Narzêdzie do zmiany nazw plików dla KDE
 Name:		krename
-Version:	2.5.0
+Version:	2.5.4
 Release:	1
 License:	GPL
 Vendor:		Dominik Seichter <domseichter@web.de>
@@ -38,6 +38,7 @@ uprawnieñ oraz w³asno¶ci plików.
 %setup -q
 
 %build
+kde_appsdir="%{_applnkdir}"; export kde_appsdir
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 kde_icondir="%{_pixmapsdir}"; export kde_icondir
 %configure
