@@ -9,8 +9,8 @@ Vendor:		Dominik Seichter <domseichter@web.de>
 Source0:	http://dl.sourceforge.net/krename/%{name}-%{version}.tar.bz2
 # Source0-md5:	ac3b1d5dec05765f0199564bc9af6a92
 URL:		http://krename.sourceforge.net/
-BuildRequires:  fam-devel
-BuildRequires:  kdelibs-devel >= 3.0
+BuildRequires:	fam-devel
+BuildRequires:	kdelibs-devel >= 3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_htmldir	/usr/share/doc/kde/HTML
