@@ -5,7 +5,7 @@ Version:	2.5.0
 Release:	1
 License:	GPL
 Vendor:		Dominik Seichter <domseichter@web.de>
-Url:		http://krename.sourceforge.net
+Url:		http://krename.sourceforge.net/
 Source0:	http://telia.dl.sourceforge.net/sourceforge/krename/%{name}-%{version}.tar.bz2
 Group:		X11/Applications
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
