@@ -43,7 +43,6 @@ uprawnieñ oraz w³asno¶ci plików.
 
 %build
 cp -f /usr/share/automake/config.sub admin
-kde_htmldir="%{_kdedocdir}"; export kde_htmldir
 %configure \
 	--with-qt-libraries=%{_libdir}
 
@@ -53,7 +52,8 @@ kde_htmldir="%{_kdedocdir}"; export kde_htmldir
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT	\
+	kde_htmldir=%{_kdedocdir}
 
 mv -f $RPM_BUILD_ROOT%{_datadir}/locale/{zh_TW.Big5,zh_TW}
 
