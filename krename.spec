@@ -9,7 +9,7 @@ Vendor:		Dominik Seichter <domseichter@web.de>
 Source0:	http://dl.sourceforge.net/krename/%{name}-%{version}.tar.bz2
 # Source0-md5:	9f3575391562f3ebcc6705c92c8b0374
 Patch0:		%{name}-desktop.patch
-URL:		http://krename.sourceforge.net/
+URL:		http://www.krename.net/
 BuildRequires:	automake
 BuildRequires:	fam-devel
 BuildRequires:	kdelibs-devel >= 3.0
