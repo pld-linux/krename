@@ -1,4 +1,4 @@
-Summary:	A powerfull batch renamer for KDE
+Summary:	A powerful batch renamer for KDE
 Summary(pl):	Narzêdzie do zmiany nazw plików dla KDE
 Name:		krename
 Version:	2.8.2
