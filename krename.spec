@@ -7,6 +7,7 @@ License:	GPL
 Vendor:		Dominik Seichter <domseichter@web.de>
 Url:		http://krename.sourceforge.net/
 Source0:	http://telia.dl.sourceforge.net/sourceforge/krename/%{name}-%{version}.tar.bz2
+# Source0-md5:	4c361b1ab91518e9129adafb26d607a0
 Group:		X11/Applications
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:  kdelibs-devel >= 3.0
