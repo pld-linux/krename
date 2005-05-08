@@ -5,7 +5,6 @@ Version:	3.0.4
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Vendor:		Dominik Seichter <domseichter@web.de>
 Source0:	http://dl.sourceforge.net/krename/%{name}-%{version}.tar.bz2
 # Source0-md5:	2a4583aeceffbc1d6b6202899e5740f7
 Patch0:		%{name}-desktop.patch
@@ -57,9 +56,9 @@ rm -rf $RPM_BUILD_ROOT
 
 mv -f $RPM_BUILD_ROOT%{_datadir}/locale/{zh_TW.Big5,zh_TW}
 
-install -d $RPM_BUILD_ROOT%{_desktopdir}
+install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
 mv -f $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/krename.desktop \
-	$RPM_BUILD_ROOT%{_desktopdir}
+	$RPM_BUILD_ROOT%{_desktopdir}/kde
 
 %find_lang %{name} --with-kde
 
@@ -70,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/*
-%{_desktopdir}/*.desktop
+%{_desktopdir}/kde/*.desktop
 %{_datadir}/apps/krename
 %{_datadir}/apps/konqueror/servicemenus/*.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
