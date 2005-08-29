@@ -14,6 +14,6 @@
 -Terminal=0
 +Comment[pl]=Zmiana nazw plików
 +Terminal=false
- Name=Krename
+ Name=KRename
 +Categories=Qt;KDE;Utility;FileManager;
 +# vi: encoding=utf-8
