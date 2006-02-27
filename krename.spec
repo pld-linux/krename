@@ -1,12 +1,12 @@
 Summary:	A powerful batch renamer for KDE
 Summary(pl):	Narzêdzie do zmiany nazw plików dla KDE
 Name:		krename
-Version:	3.0.10
+Version:	3.0.11
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/krename/%{name}-%{version}.tar.bz2
-# Source0-md5:	1fc2024460db0717f8f337b2bd2a3d93
+# Source0-md5:	a3a426243a03cc9578204a3943f13c9a
 Source1:	http://dl.sourceforge.net/krename/%{name}-3.0.3.pdf
 # Source1-md5:	0e598b7acf88e80bf76fdfd22d8c7929
 Patch0:		%{name}-desktop.patch
@@ -72,10 +72,6 @@ rm -rf $RPM_BUILD_ROOT
 mv -f $RPM_BUILD_ROOT%{_datadir}/locale/{zh_TW.Big5,zh_TW}
 mv -f $RPM_BUILD_ROOT%{_datadir}/locale/{zh_CN.GB2312,zh_CN}
 
-install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
-mv -f $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/krename.desktop \
-	$RPM_BUILD_ROOT%{_desktopdir}/kde
-
 %find_lang %{name} --with-kde
 
 %clean
@@ -87,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/kde/*.desktop
 %{_datadir}/apps/krename
-%{_datadir}/apps/konqueror/servicemenus/*.desktop
+%{_datadir}/services/*.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
 
 %files doc

@@ -1,19 +1,19 @@
---- krename-3.0.0/krename/krename.desktop.orig	Thu Mar 14 20:17:19 2002
-+++ krename-3.0.0/krename/krename.desktop	Thu Jul 15 11:49:44 2004
-@@ -1,5 +1,6 @@
- # KDE Config File  
+diff -urN krename-3.0.11/krename/krename.desktop krename-3.0.11.new/krename/krename.desktop
+--- krename-3.0.11/krename/krename.desktop	2006-01-14 13:52:12.000000000 +0100
++++ krename-3.0.11.new/krename/krename.desktop	2006-02-27 15:59:06.000000000 +0100
+@@ -1,4 +1,5 @@
  [Desktop Entry]
 +Encoding=UTF-8
  Type=Application
- Exec=krename -caption "%c" %i %m  
+ Exec=krename -caption "%c" %i %m %U
  Icon=krename.png
-@@ -7,5 +8,8 @@
+@@ -6,6 +7,8 @@
  DocPath=krename/index.html
  Comment=A batch renamer
  Comment[de]=Ein Batch Umbenenner
--Terminal=0
 +Comment[pl]=Zmiana nazw plików
-+Terminal=false
+ Terminal=false
  Name=KRename
+-Categories=Qt;KDE;Utility;
 +Categories=Qt;KDE;Utility;FileManager;
 +# vi: encoding=utf-8
