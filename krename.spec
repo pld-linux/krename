@@ -1,5 +1,5 @@
 Summary:	A powerful batch renamer for KDE
-Summary(pl):	Narzêdzie do zmiany nazw plików dla KDE
+Summary(pl.UTF-8):   NarzÄ™dzie do zmiany nazw plikÃ³w dla KDE
 Name:		krename
 Version:	3.0.13
 Release:	1
@@ -27,27 +27,27 @@ of every word to uppercase, adding numbers to filenames, finding and
 replacing parts of the filename, and many more. It can also change
 access and modification dates, permissions, and file ownership.
 
-%description -l pl
-Krename jest narzêdziem do zmiany nazw plików dla KDE3, które umo¿liwia
-zmianê nazw dla listy plików na podstawie zbioru wyra¿eñ. Pozwala
-kopiowaæ i/lub przenosiæ pliki do innego katalogu lub po prostu
-zmieniaæ nazwy plików. Krename wspiera ró¿ne operacje konwersji,
-miêdzy innymi konwersjê nazw plików do ma³ych lub do wielkich liter,
-konwersjê pierwszej litery ka¿dego s³owa do wielkiej litery, dodanie
-numeru do nazwy pliku, zmianê konkretnej czê¶ci nazwy pliku i inne.
-Program pozwala równie¿ na zmianê daty dostêpu i modyfikacji,
-uprawnieñ oraz w³asno¶ci plików.
+%description -l pl.UTF-8
+Krename jest narzÄ™dziem do zmiany nazw plikÃ³w dla KDE3, ktÃ³re umoÅ¼liwia
+zmianÄ™ nazw dla listy plikÃ³w na podstawie zbioru wyraÅ¼eÅ„. Pozwala
+kopiowaÄ‡ i/lub przenosiÄ‡ pliki do innego katalogu lub po prostu
+zmieniaÄ‡ nazwy plikÃ³w. Krename wspiera rÃ³Å¼ne operacje konwersji,
+miÄ™dzy innymi konwersjÄ™ nazw plikÃ³w do maÅ‚ych lub do wielkich liter,
+konwersjÄ™ pierwszej litery kaÅ¼dego sÅ‚owa do wielkiej litery, dodanie
+numeru do nazwy pliku, zmianÄ™ konkretnej czÄ™Å›ci nazwy pliku i inne.
+Program pozwala rÃ³wnieÅ¼ na zmianÄ™ daty dostÄ™pu i modyfikacji,
+uprawnieÅ„ oraz wÅ‚asnoÅ›ci plikÃ³w.
 
 %package doc
 Summary:	Krename documentation
-Summary(pl):	Dokumentacja programu Krename
+Summary(pl.UTF-8):   Dokumentacja programu Krename
 Group:		Documentation
 Requires:	%{name} = %{version}-%{release}
 
 %description doc
 Documentation for Krename in PDF format.
 
-%description doc -l pl
+%description doc -l pl.UTF-8
 Dokumentacja do Krename w formacie PDF.
 
 %prep
