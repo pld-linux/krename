@@ -1,5 +1,5 @@
 Summary:	A powerful batch renamer for KDE
-Summary(pl.UTF-8):   Narzędzie do zmiany nazw plików dla KDE
+Summary(pl.UTF-8):	Narzędzie do zmiany nazw plików dla KDE
 Name:		krename
 Version:	3.0.13
 Release:	1
@@ -40,7 +40,7 @@ uprawnień oraz własności plików.
 
 %package doc
 Summary:	Krename documentation
-Summary(pl.UTF-8):   Dokumentacja programu Krename
+Summary(pl.UTF-8):	Dokumentacja programu Krename
 Group:		Documentation
 Requires:	%{name} = %{version}-%{release}
 
