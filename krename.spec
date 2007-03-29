@@ -94,4 +94,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files doc
 %defattr(644,root,root,755)
-%doc krename-3.0.3.pdf
+%doc %{name}-%{_pdf_ver}.pdf
