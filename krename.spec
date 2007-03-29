@@ -13,7 +13,7 @@ Patch0:		%{name}-desktop.patch
 URL:		http://www.krename.net/
 BuildRequires:	automake
 BuildRequires:	fam-devel
-BuildRequires:	kdelibs-devel >= 3.0
+BuildRequires:	kdelibs-devel >= 9:3.0
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
