@@ -1,11 +1,10 @@
 
-%define		_ver	3.0.14
 %define		_pdf_ver	3.0.12
 
 Summary:	A powerful batch renamer for KDE
 Summary(pl.UTF-8):	Narzędzie do zmiany nazw plików dla KDE
 Name:		krename
-Version:	%{_ver}
+Version:	3.0.14
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
