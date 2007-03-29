@@ -11,7 +11,6 @@ Source1:	http://dl.sourceforge.net/krename/%{name}-3.0.3.pdf
 # Source1-md5:	0e598b7acf88e80bf76fdfd22d8c7929
 Patch0:		%{name}-desktop.patch
 URL:		http://www.krename.net/
-BuildRequires:	automake
 BuildRequires:	fam-devel
 BuildRequires:	kdelibs-devel >= 9:3.0
 BuildRequires:	rpmbuild(macros) >= 1.129
@@ -56,10 +55,12 @@ cp %{SOURCE1} .
 %patch0 -p1
 
 %build
-cp -f /usr/share/automake/config.sub admin
 %configure \
+%if "%{_lib}" == "lib64"
+	--enable-libsuffix=64 \
+%endif
+	--%{?debug:en}%{!?debug:dis}able-debug%{?debug:=full} \
 	--with-qt-libraries=%{_libdir}
-
 %{__make}
 
 %install
