@@ -1,6 +1,6 @@
-diff -urN krename-3.0.11/krename/krename.desktop krename-3.0.11.new/krename/krename.desktop
---- krename-3.0.11/krename/krename.desktop	2006-01-14 13:52:12.000000000 +0100
-+++ krename-3.0.11.new/krename/krename.desktop	2006-02-27 15:59:06.000000000 +0100
+diff -ur krename-3.9.1/src/krename.desktop krename-3.9.1.new/src/krename.desktop
+--- krename-3.9.1/src/krename.desktop	2007-03-18 17:54:10.000000000 +0100
++++ krename-3.9.1.new/src/krename.desktop	2008-08-06 15:45:27.830568518 +0200
 @@ -1,4 +1,5 @@
  [Desktop Entry]
 +Encoding=UTF-8
@@ -17,3 +17,4 @@ diff -urN krename-3.0.11/krename/krename.desktop krename-3.0.11.new/krename/kren
 -Categories=Qt;KDE;Utility;
 +Categories=Qt;KDE;Utility;FileManager;
 +# vi: encoding=utf-8
+Tylko w krename-3.9.1.new/src: krename.desktop~
