@@ -14,8 +14,17 @@ Source1:	http://dl.sourceforge.net/krename/%{name}-%{_pdf_ver}.pdf
 # Source1-md5:	98141b57a29984af265aeecfd7ea8b93
 Patch0:		%{name}-desktop.patch
 URL:		http://www.krename.net/
+BuildRequires:	QtNetwork-devel
+BuildRequires:	QtSvg-devel
+BuildRequires:	automoc4
+BuildRequires:	cmake
+BuildRequires:	exiv2-devel
 BuildRequires:	fam-devel
+BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdelibs-devel
+BuildRequires:	pkgconfig
+BuildRequires:	qt4-build
+BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRequires:	taglib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
