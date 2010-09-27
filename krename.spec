@@ -4,12 +4,12 @@
 Summary:	A powerful batch renamer for KDE
 Summary(pl.UTF-8):	Narzędzie do zmiany nazw plików dla KDE
 Name:		krename
-Version:	4.0.4
-Release:	2
+Version:	4.0.5
+Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/krename/%{name}-%{version}.tar.bz2
-# Source0-md5:	9d70489f3f5f7296e334e06137717a67
+# Source0-md5:	3e064cadc6fb6f6e269ed914fb00995a
 Source1:	http://dl.sourceforge.net/krename/%{name}-%{_pdf_ver}.pdf
 # Source1-md5:	98141b57a29984af265aeecfd7ea8b93
 Patch0:		%{name}-desktop.patch
@@ -23,6 +23,7 @@ BuildRequires:	fam-devel
 BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdelibs-devel
 BuildRequires:	pkgconfig
+BuildRequires:	podofo-devel
 BuildRequires:	qt4-build
 BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.129
