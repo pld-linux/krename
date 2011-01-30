@@ -4,13 +4,13 @@
 Summary:	A powerful batch renamer for KDE
 Summary(pl.UTF-8):	Narzędzie do zmiany nazw plików dla KDE
 Name:		krename
-Version:	4.0.5
-Release:	3
+Version:	4.0.6
+Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/krename/%{name}-%{version}.tar.bz2
-# Source0-md5:	3e064cadc6fb6f6e269ed914fb00995a
-Source1:	http://dl.sourceforge.net/krename/%{name}-%{_pdf_ver}.pdf
+Source0:	http://downloads.sourceforge.net/krename/%{name}-%{version}.tar.bz2
+# Source0-md5:	fe6f6b434ec8aeafce0670e2f2924297
+Source1:	http://downloads.sourceforge.net/krename/%{name}-%{_pdf_ver}.pdf
 # Source1-md5:	98141b57a29984af265aeecfd7ea8b93
 Patch0:		%{name}-desktop.patch
 URL:		http://www.krename.net/
@@ -19,14 +19,13 @@ BuildRequires:	QtSvg-devel
 BuildRequires:	automoc4
 BuildRequires:	cmake
 BuildRequires:	exiv2-devel
-BuildRequires:	fam-devel
 BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdelibs-devel
 BuildRequires:	pkgconfig
 BuildRequires:	podofo-devel
 BuildRequires:	qt4-build
 BuildRequires:	qt4-qmake
-BuildRequires:	rpmbuild(macros) >= 1.129
+BuildRequires:	rpmbuild(macros) >= 1.600
 BuildRequires:	taglib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -72,11 +71,7 @@ cp %{SOURCE1} .
 install -d build
 cd build
 %cmake \
-		-DCMAKE_INSTALL_PREFIX=%{_prefix} \
-%if "%{_lib}" == "lib64"
-		-DLIB_SUFFIX=64 \
-%endif
-		../
+	..
 
 %{__make}
 
@@ -88,7 +83,7 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
         DESTDIR=$RPM_BUILD_ROOT \
         kde_htmldir=%{_kdedocdir}
 
-rm -rf $RPM_BUILD_ROOT%{_iconsdir}/locolor
+%{__rm} -r $RPM_BUILD_ROOT%{_iconsdir}/locolor
 
 %find_lang %{name} --with-kde
 
