@@ -13,6 +13,7 @@ Source0:	http://downloads.sourceforge.net/krename/%{name}-%{version}.tar.bz2
 Source1:	http://downloads.sourceforge.net/krename/%{name}-%{_pdf_ver}.pdf
 # Source1-md5:	98141b57a29984af265aeecfd7ea8b93
 Patch0:		%{name}-desktop.patch
+Patch1:		%{name}-cmake.patch
 URL:		http://www.krename.net/
 BuildRequires:	QtNetwork-devel
 BuildRequires:	QtSvg-devel
@@ -66,6 +67,7 @@ Dokumentacja do Krename w formacie PDF.
 %setup -q
 cp %{SOURCE1} .
 %patch0 -p1
+%patch1 -p1
 
 %build
 install -d build
