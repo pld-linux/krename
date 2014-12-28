@@ -20,7 +20,7 @@ BuildRequires:	QtSvg-devel
 BuildRequires:	automoc4
 BuildRequires:	cmake
 BuildRequires:	exiv2-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	kde4-kdelibs-devel
 BuildRequires:	pkgconfig
 BuildRequires:	podofo-devel
